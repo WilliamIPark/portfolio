@@ -8,12 +8,13 @@
 <body>
   <header>
     <h1>Portfolio</h1>
-    {% include nav.html %}
+    {% include nav.html navclass='nav-top'%}
   </header>
 
     {{content}}
 
   <footer>
+    {% include nav.html navclass='nav-bottom'%}
     <p>
       Copyright William Park 2016
     </p>
