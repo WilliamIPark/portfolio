@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="{{site.basicurl}}/css/main.css" media="screen" title="Main CSS">
 </head>
 <body>
   <header>
     <h1>Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/about.html">About</a></li>
-      </ul>
-    </nav>
+    {% include nav.html %}
   </header>
     {{content}}
+  <footer>
+    {% include nav.html %}
+    <p>
+      Copyright William Park 2016
+    </p>
+  </footer>
 </body>
 </html>
