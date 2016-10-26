@@ -1,0 +1,126 @@
+#main-header
+  height: 50px
+  width: 100%
+  position: fixed
+  padding: 50px 50px 0px 50px
+  display: flex
+  align-items: center
+  background-color: white
+  z-index: 1
+
+#nav-fade
+  height: 50px
+  top: 100px
+  width: 100%
+  background-image: url("../../resources/images/fade-gradient.png")
+  background-repeat: repeat-x
+  z-index: 2
+  position: fixed
+
+#identity-wrap
+  height: 100%
+  width: 80%
+  display: flex
+  flex-wrap: nowrap
+  align-items: center
+
+#logo
+  height: 100%
+  width: auto
+  display:inline-block
+
+#wordmark
+  display:inline-block
+  margin-left: 20px
+  font-size: 64px
+
+#nav-toggle-wrap
+  display: flex
+  justify-content: flex-end
+
+#nav-toggle-icon
+  display: inline-block
+
+.fa-bars
+  transition: all 0.3s cubic-bezier(.87,-.41,.19,1.44)
+
+.fa-bars:hover
+  transform: scale(1.2)
+
+.fa-bars:active
+  transform: scale(1.1)
+
+.fa-arrow-right
+  color: white
+
+#sidebar-toggle
+  background: none
+  border: none
+  cursor: pointer
+  outline: none
+
+#sidebar
+  background-color: #1E1E20
+  height: 95.8vh
+  width: 480px
+  position: fixed
+  top: 0
+  right: 0
+  transform: translateX(540px)
+  transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44)
+  max-height: 100%
+
+  padding: 20px 40px 20px 20px
+  margin: 0
+
+  border-left: 1px solid #999
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+.slide-sidebar
+  transform: translateX(40px) !important
+
+#sidebar h1
+  color: white
+
+#sidebar-back
+  cursor: pointer
+  transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44)
+  float: right
+
+.smooth-slide-right:hover
+  transform: translateX(3px)
+
+#sidebar-back h3
+  color: white
+  padding: 0
+  margin: 0
+
+#sidebar ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+#sidebar ul li
+  text-ident: -2em
+
+#sidebar ul li:before
+  content: '\2666 '
+  color: white
+
+.smooth-slide-right
+  color: white
+  text-decoration: none
+  display: inline-block
+  transition: all 0.2s cubic-bezier(.87,-.41,.19,1.44)
+
+#sidebar p
+  margin-top: 5px
+  margin-bottom: 5px
+  padding-bottom: 10px
+  font-size: 18px
+  color: white
+
+#back-text
+  color: white

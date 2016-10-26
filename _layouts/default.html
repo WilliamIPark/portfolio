@@ -2,22 +2,34 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Portfolio</title>
-  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css" media="screen" title="Main CSS">
+
+  <!-- Typkit -->
+  <script src="https://use.typekit.net/tqu1xud.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!-- FontAwesome Icons -->
+  <script src="https://use.fontawesome.com/a3ae80cda6.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css"
+   media="screen" title="Main CSS">
+
+   <!-- Scripts -->
+   <script type="text/javascript" src="{{site.baseurl}}/js/jquery-3.1.1.slim.min.js"></script>
+   <script type="text/javascript" src="{{site.baseurl}}/js/typed.js"></script>
+   <script type="text/javascript" src="{{site.baseurl}}/js/nav.js"></script>
+   <script type="text/javascript" src="{{site.baseurl}}/js/index-specific.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Portfolio</h1>
-    {% include nav.html navclass='nav-top'%}
-  </header>
-
-    {{content}}
-
-  <footer>
-    {% include nav.html navclass='nav-bottom'%}
-    <p>
-      Copyright William Park 2016
-    </p>
-  </footer>
+  <main id="main-container">
+      {% include header.html %}
+      {{content}}
+      {% include footer.html %}
+  </main>
+  {% include sidebar.html %}
 </body>
 </html>
