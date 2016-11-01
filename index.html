@@ -68,7 +68,7 @@ layout: default
               <small>Posted: {{ post.date | date_to_long_string }}</small>
             </header>
             <p>{{ post.meta }}</p>
-            <a href="{{site.baseurl}}{{post.url}}"><button>Read More</button></a>
+            <a href="{{site.baseurl}}{{post.url}}"><button><p>Read More</p></button></a>
 
             <footer>
               {% for tag in post.tags %}

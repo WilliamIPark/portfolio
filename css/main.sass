@@ -39,6 +39,7 @@ body
   color: white
 
 p
+  font-family: $main-fonts
   font-size: 24px
   font-weight: lighter
 
@@ -153,8 +154,6 @@ button
   border: 2px solid black
   padding: 10px
   background-color: white
-  font-family: $main-fonts
-  font-size: 16px
   transition: all 0.3s ease
   margin: 10px 0
 
@@ -163,10 +162,13 @@ button:hover
   cursor: pointer
   background-color: black
 
-button a
+button p
   transition: all 0.3s ease
+  padding: 0
+  margin: 0
+  font-size: 16px
 
-button:hover a
+button:hover p
   text-decoration: none
   color: white
 
