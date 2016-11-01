@@ -27,6 +27,17 @@ body
   padding: 0
   margin: 0
 
+#push-down
+  margin-top: 150px
+
+::selection
+  background-color: black
+  color: white
+
+::-moz-selection
+  background-color: black
+  color: white
+
 p
   font-size: 24px
   font-weight: lighter
@@ -137,3 +148,24 @@ main section section
   -webkit-filter: none
   filter: none
   opacity: 1
+
+button
+  border: 2px solid black
+  padding: 10px
+  background-color: white
+  font-family: $main-fonts
+  font-size: 16px
+  transition: all 0.3s ease
+  margin: 10px 0
+
+button:hover
+  text-decoration: none
+  cursor: pointer
+  background-color: black
+
+button a
+  transition: all 0.3s ease
+
+button:hover a
+  text-decoration: none
+  color: white

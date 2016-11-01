@@ -23,8 +23,8 @@ layout: default
         </p>
 
         <p>
-          I’m also looking for employment so if recruitment is a possibility,
-          help me help you! View a detailed overview of my work.
+          I’m also looking for student placement. If this is something you could help
+          me with I would love you to get in touch!
         </p>
       </section>
 
@@ -54,39 +54,22 @@ layout: default
         </section>
         <section>
           <h2>Latest Posts</h2>
+
+          {% for post in site.categories.blog limit: 2%}
           <section class="post-preview">
             <header>
-              <h3><a href="#">Building Websites</a></h3>
-              <small>Posted: 25th October 2016</small>
+              <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+              <small>Posted: {{ post.date | date_to_long_string }}</small>
             </header>
-            <p>When you are building websites there is so much to consider
-              that it can be hard to get your head around it. Planning is key
-              so you're well directed by the time you jump into the code...</p>
-            <p><a href="#">Read More</a>
+            <p>{{ post.meta }}</p>
+            <button><a href="{{site.baseurl}}{{post.url}}">Read More</a></button>
 
             <footer>
-              <span class="tag">Websites</span>
-              <span class="tag">Planning</span>
-              <span class="tag">Prototyping</span>
-              <span class="tag">Wireframing</span>
+              {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
             </footer>
           </section>
-          <section class="post-preview">
-            <header>
-              <h3><a href="#">Working with API's</a></h3>
-              <small>Posted: 18th October 2016</small>
-            </header>
-            <p>An API is like a service that you connect to with code in order
-              to display data. They're very powerful especially when combined.
-              Many services have API's that you can hook into such as...</p>
-            <p><a href="#">Read More</a>
-
-            <footer>
-              <span class="tag">Websites</span>
-              <span class="tag">API</span>
-              <span class="tag">Programming</span>
-              <span class="tag">Development</span>
-            </footer>
-          </section>
+          {% endfor %}
         </section>
       </section>

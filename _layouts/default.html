@@ -27,8 +27,10 @@
 <body>
   <main id="main-container">
       {% include header.html %}
-      {{content}}
-      {% include footer.html %}
+      <div id="push-down">
+        {{content}}
+        {% include footer.html %}
+      </div>
   </main>
   {% include sidebar.html %}
 </body>
