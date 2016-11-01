@@ -1,3 +1,5 @@
 exclude: ['README.md']
+permalink: /blog/:title
+permalink: pretty
 sass:
     sass_dir: _sass
