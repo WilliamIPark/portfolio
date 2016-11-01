@@ -33,5 +33,10 @@
       </div>
   </main>
   {% include sidebar.html %}
+
+  <!-- GOOGLE ANALYTICS -->
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 </body>
 </html>
