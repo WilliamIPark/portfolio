@@ -4,6 +4,7 @@ $(document).ready(function(){
     event.preventDefault();
     $('#sidebar').toggleClass("slide-sidebar");
     $('#main-container').toggleClass("slide-content");
+    $('#main-footer').toggleClass("hide-footer");
   });
 
   //Sidebar Toggle - Back Button
@@ -11,6 +12,7 @@ $(document).ready(function(){
     event.preventDefault();
     $('#sidebar').toggleClass("slide-sidebar");
     $('#main-container').toggleClass("slide-content");
+    $('#main-footer').toggleClass("hide-footer");
   });
 
 });

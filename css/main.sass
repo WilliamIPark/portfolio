@@ -4,15 +4,11 @@ title: CSS stylesheet
 
 $baseurl: "{{ site.baseurl }}"
 
+@import variables
+
 @import nav
 @import footer
 @import index-specific
-
-$header-fonts: "essonnes-headline", "Times New Roman", Georgia, serif
-$header-color: black
-
-$main-fonts: "essonnes-display", "Times New Roman", Georgia, serif
-$main-color: #4F4F4F
 
 .clearfix:after
   content: ""
@@ -83,6 +79,9 @@ main section
   padding: 25px 50px
   max-width: 960px
 
+main section:last-of-type
+  margin-bottom: 50px
+
 main section section
   padding: 0
 
@@ -121,7 +120,7 @@ main section section
 
 .tag
   display: inline-block
-  background-color: $header-color
+  background-color: $accent-color
   color: white
   font-weight: lighter
 
@@ -159,7 +158,7 @@ main section section
   opacity: 1
 
 button
-  border: 2px solid black
+  border: 2px solid $accent-color
   padding: 10px
   background-color: white
   transition: all 0.3s ease
@@ -168,7 +167,7 @@ button
 button:hover
   text-decoration: none
   cursor: pointer
-  background-color: black
+  background-color: $accent-color
 
 button p
   transition: all 0.3s ease

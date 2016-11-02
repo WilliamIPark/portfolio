@@ -11,22 +11,31 @@ I can help you with websites and graphics. I specialize in designing and develop
 I’m also looking for employment so if recruitment is a possibility, help me help you! View a detailed overview of my work.
 
 About
+=====
 
 My Work & I
+-----------
 
 My name is William, as I’m sure you have gathered! I am an Interaction Designer based in Northern Ireland.  What does that mean? I create designs for anything you interact with - websites, posters, business cards - you name it!
 
 Careful consideration goes into all my designs. I make sure they are modern and as interactive as they can be, while ensuring they are accessible.
 
 My Journey So far...
+------------------
 
-I started off with design when I was 12, creating silly (and now, cringe worthy) forum signatures. It may have been silly back then, but design gripped me and has stayed with me since, as I now study design at University.
+When I first got myself a computer it was not long before I entrenched myself in the creative possibilities of using software such as Photoshop. I didn't know anything about
+design, and I mostly did silly things in Photoshop, but little did I know I was teaching myself how to use industry standard tools.
 
-As I explored the internet a creative curiosity always caught me, and I had a constant desire to want to learn. I learned skills in graphic creation, using software like Photoshop and Illustrator. I learned skills in building websites, like HTML, CSS, and Javascript.
+Getting inspired is something that has pushed me over the years to explore different areas of computing. I've had a go at everything from 3D modelling to building games. I find
+teaching myself an effective way to learn and I enjoy it. I found myself to enjoy code and graphics as my favorite hobbies.
 
-In more recent years I've been studying at University, and in my free time teaching myself. At University I study Interaction Design, a visual approach to design and planning. I've been teaching myself how websites work, and how to manipulate the back-end of them.
+As I became more focused I decided to go to University to study the theory of design to go along with my self-taught technical knowledge. I can truthfully say I have
+learned a lot studying in Interaction Design. That is not to say I don't work on side projects at home any more, however!
 
-With both these areas of knowledge combined it gives me a wide angle view on what to consider in my designs. I can create beautiful designs that build on the under-laying interactivity.
+Today...
+--------
+
+Today I'm looking for placement for my third year at University so I can continue to expand my knowledge, but also start to bring my skills into the real world!
 
 Projects
 

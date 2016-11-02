@@ -10,10 +10,12 @@ layout: default
 
       <section>
 
-        <div class="warning">
-          <h3><i class="fa fa-cogs" aria-hidden="true"></i> Pssst..</h3>
-          <p>This website is still under active development as of 01 November 2016. Things may look silly, or be completely broken.</p>
-        </div>
+        {% if jekyll.environment == 'production' %}
+          <div class="warning">
+            <h3><i class="fa fa-cogs" aria-hidden="true"></i> Pssst..</h3>
+            <p>This website is still under active development as of 02 November 2016. Things may look silly, or be completely broken.</p>
+          </div>
+        {% endif %}
 
         <h2>Who am I?</h2>
         <p>
