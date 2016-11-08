@@ -9,6 +9,7 @@ $baseurl: "{{ site.baseurl }}"
 @import nav
 @import footer
 @import index-specific
+@import gallery
 
 .clearfix:after
   content: ""
@@ -77,7 +78,9 @@ main
 
 main section
   padding: 25px 50px
+  width: 100%
   max-width: 960px
+  justify-content: flex-start
 
 main section:last-of-type
   margin-bottom: 50px
