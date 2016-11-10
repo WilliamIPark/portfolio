@@ -3,7 +3,7 @@
   title: Building The Portfolio
   meta: "It is only natural in my opinion, that the first article wrote on this website should be about the website itself. I'll start with what I wanted this website to be..."
   category: blog
-  tags: [Web Development, API]
+  tags: [Web Development, Web Design]
   date: 2016-11-08
 ---
 
