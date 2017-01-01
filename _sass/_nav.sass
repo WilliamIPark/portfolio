@@ -1,16 +1,19 @@
 @import variables
 
+//Main, top of page, navigation.
 #main-header
-  width: 960px
-  padding: 30px 0 10px 0
+  width: 100%
+  padding: 30px 0 20px 0
   position: fixed
   display: flex
   align-items: center
+  justify-content: center
 
   background-color: white
   z-index: 10
 
 #header-wrap
+  max-width: 960px
   width: 100%
   display: flex
   align-items: center
@@ -22,11 +25,20 @@
   text-decoration: none
 
 
-#identity-wrap
+#desktop-nav ul
   display: flex
-  width: 500px
-  height: 50px
+  list-style: none
+  padding: 0
 
+#desktop-nav ul a
+  padding: 5px 10px
+
+#desktop-nav ul a:hover
+  color: white
+  background-color: black
+
+
+//Small fade gradient to stop the harsh disappearance of content.
 #nav-fade
   height: 50px
   top: 120px
@@ -36,6 +48,12 @@
   z-index: 1
   position: fixed
 
+
+//Keeps the logo and wordmark together.
+#identity-wrap
+  display: flex
+  width: 500px
+  height: 50px
 
 #logo
   max-height: 50px
@@ -48,6 +66,9 @@
   font-size: 64px
   position: relative
   bottom: 75px
+
+
+//Hamburger menu.
 
 #nav-toggle-icon
   display: inline-block
@@ -132,3 +153,15 @@
 
 #back-text
   color: white
+
+@media screen and (max-width: 1000px)
+  #main-header
+    padding: 30px 50px 0px 50px
+    width: 100%
+
+  #header-wrap
+    flex-direction: column
+    align-items: flex-start
+
+  #nav-fade
+    top: 150px

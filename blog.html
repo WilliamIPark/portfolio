@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section>
+  <section>
+    <h2>Latest Posts</h2>
+
+    {% for post in site.categories.blog limit: 10%}
+    <section class="post-preview">
+      <header>
+        <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+        <small>Posted: {{ post.date | date_to_long_string }}</small>
+      </header>
+      <p>{{ post.meta }}</p>
+      <a href="{{site.baseurl}}{{post.url}}"><button><p>Read More</p></button></a>
+    </section>
+    {% endfor %}
+  </section>
+</section>

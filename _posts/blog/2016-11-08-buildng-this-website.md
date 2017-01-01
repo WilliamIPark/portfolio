@@ -28,6 +28,6 @@ Some of the goals have solutions that worked, and were easy. The high contrast b
 
 Behind the scenes the website is running on Jekyll, a static site generator. It is very much geared towards blogging by default, but is easily extendable to add your own data to. I wanted to have my gallery posts update easily without me having to delve into HTML, so I created a data structure in Jekyll containing everything needed for a post on the gallery.
 
-![Data structure for a gallery post]({{site.baseurl}}../../resources/images/blog-posts/building-the-website-01.png "Data structure for a gallery post")
+![Data structure for a gallery post]({{site.baseurl}}../../resources/images/blog-posts/building-the-website-01.png "Data structure for a gallery post"){: .blog-img-responsive}
 
 This allows me to update my website super fast, without much effort involved, which meets the goal of being easy to update! The same kind of data structure is used for these blog posts, and will also be used for my case study pages.

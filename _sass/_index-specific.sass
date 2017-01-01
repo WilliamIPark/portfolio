@@ -1,5 +1,5 @@
 @import variables
-  
+
 #intro-sentence-wrap
   width: 100%
 
@@ -19,6 +19,18 @@
   -moz-animation: blink 0.7s infinite
   animation: blink 0.7s infinite
   z-index: -1 !important
+
+#featured-wrap
+  display: flex
+
+#featured-image
+  margin-right: 20px
+
+#featured-description header h3
+  margin: 0
+
+#featured-work
+  margin-bottom: 120px
 
 @keyframes blink
   0%
@@ -43,3 +55,10 @@
     opacity: 0
   100%
     opacity: 1
+
+@media screen and (max-width: 1000px)
+  #featured-wrap
+    flex-direction: column
+
+  #featured-description
+    margin-top: 20px

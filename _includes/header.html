@@ -1,20 +1,46 @@
 <header id="main-header">
   <section id="header-wrap">
-    <a href="/">
-      <div id="identity-wrap">
-          <img src="{{site.baseurl}}/resources/images/Monogram_Large_Optimized.svg"
-               alt="Logo"
-               id="logo"
-          />
-        <h1 id="wordmark">William Park</h1>
-      </div>
-    </a>
+    <div>
+      <a href="/">
+        <div id="identity-wrap">
+            <img src="{{site.baseurl}}/resources/images/Monogram_Large_Optimized.svg"
+                 alt="Logo"
+                 id="logo"
+            />
+          <h1 id="wordmark">William Park</h1>
+        </div>
+      </a>
+    </div>
+    <nav id="desktop-nav">
+      <ul>
+        <a href="{{site.baseurl}}/">
+          <li>Home</li>
+        </a>
 
-    <nav id="nav-toggle-wrap">
+        <a href="{{site.baseurl}}/about/">
+          <li>About</li>
+        </a>
+
+        <a href="{{site.baseurl}}/gallery">
+          <li>Gallery</li>
+        </a>
+
+        <a href="{{site.baseurl}}/">
+          <li>Projects</li>
+        </a>
+
+        <a href="{{site.baseurl}}/blog">
+          <li>Blog</li>
+        </a>
+      </ul>
+    </nav>
+  </section>
+
+    <!-- <nav id="nav-toggle-wrap">
       <button type="button" name="sidebar-toggle" id="sidebar-toggle">
         <i id="nav-toggle-icon" class="fa fa-bars fa-3x"></i>
       </button>
     </nav>
+    -->
     <div id="nav-fade"></div>
-  </section>
 </header>

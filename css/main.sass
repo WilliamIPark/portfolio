@@ -51,10 +51,10 @@ h1
   font-size: 36px
 
 h2
-  font-size: 30px
+  font-size: 32px
 
 h3
-  font-size: 26px
+  font-size: 24px
 
 h4
   font-size: 22px
@@ -75,10 +75,10 @@ main
   display: flex
   flex-direction: column
   align-items: center
+  margin: 0 50px
 
 main section
-  padding: 25px 50px
-  width: 100%
+  padding: 25px 15px
   max-width: 960px
   justify-content: flex-start
 
@@ -103,6 +103,8 @@ main section section
 .two-column > section:first-of-type
   margin-right: 40px
 
+.pull-left
+  float: left
 
 .post-preview
   width: 100%
@@ -191,3 +193,26 @@ button:hover p
 
 .warning:hover
   opacity: 1
+
+////BLOG STUFF
+
+//Wrapper for the article pages such as blog posts.
+
+#article-wrap
+  max-width: 960px
+  width: 100%
+
+.blog-img-responsive
+  max-width: 900px
+  width: 100%
+
+
+@media screen and (max-width: 1000px)
+  #main-container
+    align-items: flex-start
+
+  .two-column
+    flex-direction: column
+
+  .two-column > section:first-of-type
+    margin-right: 0px

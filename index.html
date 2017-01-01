@@ -13,7 +13,7 @@ layout: default
         {% if jekyll.environment == 'production' %}
           <div class="warning">
             <h3><i class="fa fa-cogs" aria-hidden="true"></i> Pssst..</h3>
-            <p>This website is still under active development as of 08 November 2016. Things may look silly, or be completely broken.</p>
+            <p>This website is still under active development as of 31 December 2016. Things may look silly, or be completely broken.</p>
           </div>
         {% endif %}
 
@@ -31,35 +31,37 @@ layout: default
         </p>
 
         <p>
-          I’m also looking for placement. If this is something you could help
-          me with I would love you to get in touch!
+          I’m also looking for placement in a workplace. If this is something you could help
+          me with I would love for you to get in touch!
         </p>
       </section>
 
-      <section class="two-column">
-        <section>
+      <section id="articles">
+
+        <section id="featured-work">
           <h2>Featured Work</h2>
-          <img src="resources/images/homepage-featured-2.png"
-               alt="Rocket Visual Marque"
-               class="responsive-img grayscale-haze border-simple" />
-
-               <header>
-                 <h3><a href="#">Rocket Visual Marque</a></h3>
-               </header>
-               <p>
-                 This visual marque was designed while working on my personal
-                 brand. I explored all avenues including wordmarks, monograms
-                 and visual marques.
-               </p>
-               <p>
-                 I choose to use my monogram in the end as I think it has a
-                 stronger visual impact. However, I really loved this visual
-                 marque.
-               </p>
-
-                 </aside></p>
-                <a href="#"><button><p>Read More</p></button></a>
+            <div id="featured-wrap">
+              <div id="featured-image">
+                <img src="resources/images/homepage-featured-2.png"
+                   alt="Rocket Visual Marque"
+                   class="border-simple" />
+              </div>
+              <div id="featured-description">
+                 <header>
+                   <h3><a href="#">Rocket Visual Marque</a></h3>
+                 </header>
+                 <p>
+                   This visual marque was designed while working on my personal
+                   brand. I explored all avenues including wordmarks, monograms
+                   and visual marques. Despite choosing the monogram to use as
+                   my brand, I loved this illustration.
+                 </p>
+                 <a href="#"><button><p>Read More</p></button></a>
+              </div>
+            </div>
         </section>
+
+
         <section>
           <h2>Latest Posts</h2>
 
@@ -71,12 +73,6 @@ layout: default
             </header>
             <p>{{ post.meta }}</p>
             <a href="{{site.baseurl}}{{post.url}}"><button><p>Read More</p></button></a>
-
-            <footer>
-              {% for tag in post.tags %}
-                <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </footer>
           </section>
           {% endfor %}
         </section>
