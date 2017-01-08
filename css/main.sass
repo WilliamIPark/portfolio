@@ -168,11 +168,13 @@ button
   background-color: white
   transition: all 0.3s ease
   margin: 10px 0
+  font-family: $main-fonts
 
 button:hover
   text-decoration: none
   cursor: pointer
   background-color: $accent-color
+  color: white
 
 button p
   transition: all 0.3s ease
@@ -196,15 +198,24 @@ button:hover p
 
 ////BLOG STUFF
 
-//Wrapper for the article pages such as blog posts.
+//Wrapper for the article pages such as blog posts & case study pages.
 
 #article-wrap
   max-width: 960px
   width: 100%
 
 .blog-img-responsive
-  max-width: 900px
+  max-width: 960px
   width: 100%
+
+//Used for centering images in blog posts.
+.img-center
+  display: flex
+  justify-content: center
+
+//Used on projects page for main images.
+.projects-img
+  margin: 2em 0 0 0
 
 
 @media screen and (max-width: 1000px)

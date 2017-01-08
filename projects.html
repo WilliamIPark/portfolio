@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section>
+  <section>
+    <h2>Case Studies</h2>
+    <p>Looks at my work with my thoughts on how it turned out, and my process explained.</p>
+  </section>
+  <section>
+    {% for post in site.categories.projects %}
+    <section class="post-preview">
+      <header>
+        <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+        <small>Posted: {{ post.date | date_to_long_string }}</small>
+      </header>
+      <img src="{{site.baseurl}}{{post.main-img}}" class="blog-img-responsive projects-img"/>
+      <p>{{ post.meta }}</p>
+      <a href="{{site.baseurl}}{{post.url}}"><button><p>Read More</p></button></a>
+    </section>
+    {% endfor %}
+  </section>
+</section>
